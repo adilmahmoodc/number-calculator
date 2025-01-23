@@ -1,0 +1,15 @@
+<h1>Total Increasing and Decreasing Numbers</h1>
+
+<%= form_with url: home_index_path, method: :get, local: true do %>
+  <div>
+    <label for="x">Enter a value for x:</label>
+    <%= number_field_tag :x, params[:x], min: 0 %>
+  </div>
+  <div>
+    <%= submit_tag "Calculate" %>
+  </div>
+<% end %>
+
+<% if @result.present? %>
+  <h2>total_inc_dec(<%= params[:x]%>): <%= @result %></h2>
+<% end %>
