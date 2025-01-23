@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app calculates the total number of "increasing" and "decreasing" numbers
+within a specified range based on the number of digits.
 
-Things you may want to cover:
+## Follow the steps to run the app
 
-* Ruby version
+Install the required gems
 
-* System dependencies
+```yml
+bundle install
+```
+Run the rails server
 
-* Configuration
+```yml
+rails s
+```
 
-* Database creation
+For the rspec
 
-* Database initialization
+```yml
+bundle exec rspec
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

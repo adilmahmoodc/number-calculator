@@ -1,12 +1,12 @@
-class NumberCalculatorService
-  def self.total_inc_dec(x)
-    return 0 if x.negative?
-    return 1 if x.zero?
+module NumberCalculatorService
+  def self.total_inc_dec(zeros_count)
+    return 0 if zeros_count.negative?
+    return 1 if zeros_count.zero?
 
     increasing_count = 0
     decreasing_count = 0
 
-    (1..(10**x)).each do |num|
+    (1..(10**zeros_count)).each do |num|
       digits = num.digits
       if digits == digits.sort
         increasing_count += 1
